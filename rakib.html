@@ -1,14 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="styles/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS DOM EVENTS</title>
 </head>
 <body>
-    <h1>DOM er ajke special events</h1>
+    <h1 onclick="console.log('ami tomr mamato vai');
+    ">DOM er ajke special events</h1>
     <button onclick="console.log('M RAKIB AHMED');
     ">Click Me</button>
+    <button onclick="console.log('hello world');
+    ">Anothere here</button>
+    <br> <br>
+
+<button class="rakib" onclick="document.body.style.backgroundColor='yellow'">Make yellow</button>
+
+<button class="rana" onclick="makeRed()">Make Red</button>
+<button class="rani" id="make-blue">Make Blue</button>
+<button class="ranai" id="make-purple">Make Purple</button>
+<button class="pind" id="make-pink">Make Pink</button>
+<button class="green" id="make-green">Make Green</button>
+<button class="gondenrod" id="make-goldenrod">Make Goldenrod</button>
+
+<script>
+    document.getElementById('make-goldenrod').addEventListener('click',function(){
+        document.body.style.backgroundColor = 'goldenrod'
+    })
+
+    
+</script>
+
+
+
+
+
+
+
+
+
     <script src="js/rakib.js"></script>
 </body>
 </html>
